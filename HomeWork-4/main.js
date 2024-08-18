@@ -210,16 +210,6 @@ function exchange(sumUAH,currencyValues,exchangeCurrency) {
     return sumUAH / currency.value;
 }
 
-//     if (exchangeCurrency === 'USD') {
-//         for (const sumUAHElement of currencyValues) {
-//             if (currencyValues.currency === 'USD') {
-//                 sum = sumUAH/currencyValues.value;
-//             }
-//         }
-//     }
-//     return a;
-// }
-
 
 console.log(exchange(10000,
     [{currency:'USD',value:25},
