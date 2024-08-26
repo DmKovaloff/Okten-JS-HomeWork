@@ -174,6 +174,46 @@ console.log(car);
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
+class Cinderella {
+    constructor(name, age, size) {
+        this.name = name;
+        this.age = age;
+        this.size = size;
+    }
+
+}
+
+class Prince {
+    constructor(name, age, finding) {
+        this.name = name;
+        this.age = age;
+        this.finding = finding;
+    }
+}
+
+let candidate = [
+    new Cinderella('Anna', 20, 36),
+    new Cinderella('Olga', 20, 37),
+    new Cinderella('Iryna', 20, 38),
+    new Cinderella('Galyna', 40, 42),
+    new Cinderella('Anna2', 19, 337),
+];
+
+let prince = new Prince('Tolik', 34, 42);
+
+// for (const cinderella of candidate) {
+//     if (cinderella.size === prince.finding) {
+//         prince.done = cinderella;
+//     }
+// }
+//
+// console.log(prince);
+
+let truCinderella = candidate.filter(cinderella =>cinderella.size === prince.finding);
+prince.done = truCinderella;
+console.log(prince);
+
 
 // #gsKLAsNWM
 // *Через Array.prototype. створити власний foreach, filter
+
