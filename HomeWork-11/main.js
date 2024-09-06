@@ -1,7 +1,6 @@
 // #HmvAfRQM
 // - взяти https://dummyjson.com/docs/carts та вивести інформацію про всі корзини. Відобразити всі поля кожної корзини.
 
-
 const cartsDiv = document.getElementById('carts');
 
 fetch('https://dummyjson.com/carts')
@@ -21,7 +20,7 @@ fetch('https://dummyjson.com/carts')
                 "totalProducts": ${cart.totalProducts},
                 "totalQuantity": ${cart.totalQuantity}
             `
-            
+
             const listProduct = document.createElement('ol');
 
             for (const listProductElement of cart.products) {
@@ -31,7 +30,6 @@ fetch('https://dummyjson.com/carts')
                 "title": ${listProductElement.title},
                 "price": ${listProductElement.price}
                 `
-
                 const img = document.createElement('img');
                 img.src = listProductElement.thumbnail;
                 li.append(img, info);
@@ -47,24 +45,4 @@ fetch('https://dummyjson.com/carts')
 //     - взяти https://dummyjson.com/docs/recipes та вивести інформацію про всі рецепти. Інгредієнти повинні бути список під час відображення.
 
 
-// discountedTotal
-//     :
-//     89686.65
-// id
-//     :
-//     1
-// products
-//     :
-//     (4) [{…}, {…}, {…}, {…}]
-// total
-//     :
-//     103774.85
-// totalProducts
-//     :
-//     4
-// totalQuantity
-//     :
-//     15
-// userId
-//     :
-//     33
+
